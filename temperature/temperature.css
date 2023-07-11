@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.wraper {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(45deg, rgb(15, 52, 67) , rgb(52, 232, 158));
+}
+
+.heading{
+  z-index: 3;
+  display: flex;
+  position: absolute;
+  text-align: center;
+  color:white;
+  font-weight: bold;
+  text-shadow: 1px 2px 2px black;
+  font-size: 25px;
+}
+
+.temp-icon{
+  position: relative;
+  display: inline;
+  font-size: 8rem;
+  text-shadow: 1px 2px 2px black;
+}
+  
+  .container{
+    position: absolute;
+    top: 50%;
+    left: 50%;    
+    height: 30rem;
+    width: 30rem;
+
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.2);
+    z-index: 2;
+    backdrop-filter: blur(100px);
+    border: 1px solid black;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+    padding: 20px;
+    backface-visibility: hidden;
+    transition: transform 0.5s;
+  }
+
+  .container-inner{
+    position: relative;
+    top: 35%;
+    display: flex;
+    justify-content: center;
+    /* font-size: 40px; */
+    
+  }
+  .container-inner input{
+    width: 250px;
+    height: 50px;
+    margin-bottom: 15px;
+    background:#4d5964;
+    color: white;
+    font-size:20px;
+    border: 2px solid black;
+    border-radius: 18px 0 0 18px;
+    /* background-color: black; */
+  }
+
+  ::placeholder {
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    opacity: 1; /* Firefox */
+  }
+  
+  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color: white;;
+  }
+  
+  ::-ms-input-placeholder { /* Microsoft Edge */
+   color: white;;
+  }
+  .container-inner span{
+    /* padding: 10px; */
+    font-size: 40px;
+    margin-bottom: 10px;
+    height: 50px;
+    width: 60px;
+    background:#132331;
+    color:#fff;
+    border-radius: 0 8px 8px 0;
+    border: 2px solid black;
+  }
+ 
+
+  .button{
+    margin-top: 25px;
+    text-align: center;
+    position: relative;
+    top: 35%;
+}
+
+
+.button button{
+    border: none;
+    outline: none;
+    padding: 10px 30px;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 25px;
+    box-shadow: 3px 3px 3px black;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.button button:hover{
+    background: #000;
+    color: #fff;
+    transform: scale(1.1);
+}
+
+  
+
